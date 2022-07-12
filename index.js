@@ -1,14 +1,15 @@
 import prompt from "prompt-sync";
 
-let prompt = prompt()
+const msg = prompt()
 
 function Teste() {
-    let propiedade = prompt('Propiedade css:')
+    let propriedade = msg('Propiedade css:')
     let arr = []
-    while (propiedade != 'saida') {
-        arr.push(propiedade)
-        propiedade = prompt('Propriedade css:')
+    while (propriedade != 'saida') {
+        arr.push(propriedade);
+        propriedade = msg('Propriedade css:')
     }
+    let resultado = arr.sort()
 console.log(arr.sort());
 }
 Teste()
